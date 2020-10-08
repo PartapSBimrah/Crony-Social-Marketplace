@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abhigam.www.foodspot.EnterChatRoom">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+    >
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:id="@+id/back"
+                          tools:targetApi="21"
+                          android:background="?android:attr/selectableItemBackground"
+                          android:layout_height="match_parent">
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_marginEnd="16dp"
+                           android:src="@drawable/ic_arrow_back_white"
+                           android:layout_gravity="center_vertical"
+                           android:id="@+id/back_arrow_image"
+                />
+            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_marginEnd="12dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:layout_height="40dp"
+                android:id="@+id/circular_user"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="16sp"
+                          android:id="@+id/chatname"
+                          android:textColor="@color/white"
+                          android:layout_height="wrap_content"/>
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="12sp"
+                          android:id="@+id/time"
+                          android:visibility="gone"
+                          android:layout_marginBottom="4dp"
+                          android:textColor="@color/white"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+                <View android:layout_width="0dp"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <LinearLayout android:layout_width="wrap_content"
+                              android:id="@+id/more_vert_linear"
+                              tools:targetApi="21"
+                              android:background="?android:attr/selectableItemBackground"
+                              android:layout_height="match_parent">
+                    <ImageView android:layout_width="24dp"
+                               android:layout_height="24dp"
+                               android:tint="@android:color/white"
+                               android:src="@drawable/ic_more_vert"
+                               android:layout_marginEnd="8dp"
+                               android:layout_marginStart="12dp"
+                               android:layout_gravity="center_vertical"
+                               android:textColor="@android:color/white"/>
+                </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:visibility="gone"
+                  android:id="@+id/progress_bar"
+                  android:layout_height="match_parent">
+        <ProgressBar android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:layout_gravity="center"
+                     style="?android:attr/progressBarStyle"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:visibility="gone"
+                android:id="@+id/scrollView"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <com.stfalcon.chatkit.messages.MessagesList
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:textAutoLink="all"
+        android:background="@color/white"
+        android:layout_above="@+id/input"
+    />
+
+    <com.stfalcon.chatkit.messages.MessageInput
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:inputHint="Enter Message"
+        />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

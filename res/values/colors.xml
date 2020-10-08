@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_green">#40972f</color>
+    <color name="colorDekraOrange">#f4e7810d</color>
+    <color name="colorDekraYellow">#f3f4d614</color>
+    <color name="color_pink">#e8cf4b9a</color>
+    <color name="ripple">#55a4d1</color>
+    <color name="blue">#3794eb</color>
+    <color name="green">#d356ca3f</color>
+    <color name="green_offer">#4CAF50</color>
+    <color name="default_color">#3897f0</color>
+    <color name="text_blue">#444444</color>
+    <color name="text_color">#dc000000</color>
+    <color name="shade_black">#41000000</color>
+    <color name="single_default_line">#e9ebec</color>
+
+
+    <color name="transparent_white">#7FFFFFFF</color>
+    <color name="transparent">#FF000000</color>
+    <color name="transparent_black">#7F000000</color>
+    <color name="colorPrimary">#2874f0</color>
+    <color name="faded_blue">#b9047bd5</color>
+    <color name="colorSecondary">#F8E831</color>
+    <color name="colorAccent">#F7A200</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white1">#F9FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="gray_dark">#6e6e6e</color>
+    <color name="light_white">#e1caeeff</color>
+    <color name="home_button">#a9047bd5</color>
+    <color name="purple">#661bb1</color>
+    <color name="my_notebook">#00aced</color>
+    <color name="my_wallet">#25d366</color>
+    <color name="my_wishlist">#ff0084</color>
+    <color name="my_advertise">#dc544b</color>
+    <color name="my_orders">#fffc00</color>
+    <color name="love">#fb3958</color>
+    <color name="asana_blue">#1aafd0</color>
+    <color name="contact_back">#faf9f7</color>
+    <color name="amount_transfer">#0db7ed</color>
+    <color name="highlight">#4f37a0eb</color>
+    <color name="done_yellow">#fdbb30</color>
+    <color name="turquoise">#45B8AC</color>
+    <color name="merchant_background">#4d000000</color>
+
+</resources>

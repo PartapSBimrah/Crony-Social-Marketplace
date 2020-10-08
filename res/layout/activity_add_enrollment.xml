@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/linear"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:background="@color/colorPrimary"
+    tools:context="com.abhigam.www.foodspot.AddEnrollment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+    >
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:id="@+id/back"
+                          tools:targetApi="21"
+                          android:background="?android:attr/selectableItemBackgroundBorderless"
+                          android:layout_height="match_parent">
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_marginEnd="16dp"
+                           android:src="@drawable/ic_arrow_back_white"
+                           android:layout_gravity="center_vertical"
+                />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/transfer"
+                      android:id="@+id/main_toolbar_title"
+                      android:textSize="22sp"
+                      android:layout_marginStart="16dp"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@android:color/white"
+                      />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <EditText android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:inputType="number"
+              android:textSize="32sp"
+              android:background="@android:color/transparent"
+              android:layout_gravity="center_horizontal"
+              android:id="@+id/amount"
+              android:textColor="@android:color/white"
+              android:textCursorDrawable="@drawable/color_cursor_1"
+              />
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:layout_marginRight="16dp"
+              android:layout_marginTop="16dp"
+              android:layout_marginLeft="16dp"
+              android:inputType="textNoSuggestions"
+              android:hint="@string/search_receiver"
+              android:padding="12dp"
+              android:textColor="@color/white"
+              android:textColorHint="@color/light_white"
+              android:background="@drawable/verif_code"
+              android:textCursorDrawable="@drawable/color_cursor_1"
+              android:layout_marginBottom="8dp"
+              android:id="@+id/enrollment_receiver"
+              android:paddingBottom="16dp"
+    />
+</LinearLayout>

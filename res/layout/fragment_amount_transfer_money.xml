@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/amount_transfer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/amount_transfer"
+        android:minHeight="?attr/actionBarSize"
+    >  <LinearLayout android:layout_width="wrap_content"
+                     android:id="@+id/back"
+                     tools:targetApi="21"
+                     android:focusable="true"
+                     android:clickable="true"
+                     android:background="?android:attr/selectableItemBackground"
+                     android:layout_height="match_parent">
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:layout_marginEnd="16dp"
+                   android:src="@drawable/ic_arrow_back_white"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/back_arrow_image"
+        />
+    </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/title"
+                  android:textColor="@android:color/white"
+                  android:textSize="22sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.abhigam.www.foodspot.CircularNetworkImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/circular_profile"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/fullname"
+              android:textStyle="bold"
+              android:layout_marginTop="8dp"
+              android:textColor="@android:color/white"
+              android:layout_gravity="center_horizontal"
+              android:textSize="18sp"
+              />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/enrollment"
+              android:textColor="@android:color/white"
+              android:layout_marginTop="8dp"
+              android:layout_gravity="center_horizontal"
+              android:textSize="16sp"
+    />
+    <LinearLayout android:layout_width="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="8dp"
+                  android:id="@+id/wallet_linear"
+                  android:visibility="visible"
+                  android:layout_marginBottom="12dp"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_height="wrap_content">
+        <CheckBox android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/checkbox"
+                  tools:targetApi="21"
+                  android:buttonTint="@color/black"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginEnd="8dp"
+                  />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Use Wallet Money: "
+                  android:textSize="16sp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/black"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:textSize="16sp"
+                  android:id="@+id/wallet_use_money"
+                  android:layout_gravity="center_vertical"
+                  />
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:id="@+id/amount_textview"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="8dp"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@android:color/white"
+          android:layout_marginTop="16dp"
+          android:layout_marginBottom="16dp"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/white"
+              android:textSize="24sp"
+              android:id="@+id/total_text"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginBottom="16dp"/>
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/trasfer_coins"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        app:spinning_bar_width="4dp"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+    />
+</LinearLayout>

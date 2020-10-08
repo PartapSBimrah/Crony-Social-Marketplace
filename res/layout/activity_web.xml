@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_gravity="center">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        tools:targetApi="21"
+        android:elevation="4dp"
+        android:background="@android:color/transparent"
+    >
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="wrap_content"
+                          android:id="@+id/back"
+                          tools:targetApi="21"
+                          android:focusable="true"
+                          android:clickable="true"
+                          android:background="?android:attr/selectableItemBackgroundBorderless"
+                          android:layout_height="match_parent">
+                <ImageView android:layout_width="24dp"
+                           android:layout_height="24dp"
+                           android:layout_marginEnd="16dp"
+                           android:src="@drawable/ic_arrow_back_white"
+                           android:tint="@color/black"
+                           android:layout_gravity="center_vertical"
+                           android:id="@+id/back_arrow_image"
+                />
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/about"
+                      android:textSize="22sp"
+                      android:layout_marginStart="16dp"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@color/black"
+                 />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ProgressBar android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:visibility="gone"
+                 android:layout_marginTop="10dp"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/progress_bar"
+                 style="?android:attr/progressBarStyle"/>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+</LinearLayout>

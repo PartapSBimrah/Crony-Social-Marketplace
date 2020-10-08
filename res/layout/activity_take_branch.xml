@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.abhigam.www.foodspot.TakeBranch">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20sp"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"
+                  android:layout_marginTop="24dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginBottom="8dp"
+                  android:text="@string/select_branch"/>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="16dp"
+                      android:gravity="center_horizontal"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/arch"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:id="@+id/architecture"/>
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:src="@drawable/auto"
+                       android:id="@+id/auto_mob"/>
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="8dp"
+                       android:src="@drawable/bio"
+                       android:layout_marginEnd="8dp"
+                       android:id="@+id/bio_tech"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="16dp"
+                      android:gravity="center_horizontal"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="8dp"
+                       android:src="@drawable/chem"
+                       android:layout_marginEnd="8dp"
+                       android:id="@+id/chemical_eng"/>
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/civil"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:id="@+id/civil_eng"/>
+            <ImageView android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="8dp"
+                       android:src="@drawable/computer_sci"
+                       android:layout_marginEnd="8dp"
+                       android:id="@+id/computer_sci"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_marginTop="16dp"
+                       android:gravity="center_horizontal"
+                       android:layout_height="wrap_content">
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginEnd="8dp"
+                   android:src="@drawable/electrical"
+                   android:id="@+id/electrical"/>
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="8dp"
+                   android:src="@drawable/electro"
+                   android:layout_marginEnd="8dp"
+                   android:id="@+id/electronics"/>
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_marginStart="8dp"
+                   android:src="@drawable/electro_and_tele"
+                   android:layout_marginEnd="8dp"
+                   android:id="@+id/electronics_tele"/>
+    </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginEnd="8dp"
+                      android:gravity="center_horizontal"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="100dp"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/info_and_tech"
+                       android:id="@+id/info_tech"/>
+            <ImageView android:layout_width="100dp"
+                       android:layout_marginStart="8dp"
+                       android:src="@drawable/mech"
+                       android:layout_marginEnd="8dp"
+                       android:layout_height="100dp"
+                       android:id="@+id/mechanical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

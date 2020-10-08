@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:layout_marginStart="-16dp"
+        tools:targetApi="21"
+        android:elevation="0dp"
+        android:background="@color/colorPrimary"
+       >
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView android:layout_width="20dp"
+                       android:layout_marginStart="-14dp"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ic_flag_of_india"
+                       android:layout_gravity="center_vertical"
+                      />
+
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="18sp"
+                      android:text="@string/app_name"
+                      android:id="@+id/app_name"
+                      android:layout_marginStart="16dp"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@android:color/white"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:paddingEnd="12dp"
+                          android:paddingStart="12dp"
+                          android:id="@+id/person_add"
+                          tools:targetApi="21"
+                          android:background="?android:attr/selectableItemBackground"
+                          android:layout_height="match_parent">
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_gravity="center_vertical"
+                       android:src="@drawable/ic_search"
+                       android:tint="@android:color/white"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:paddingEnd="12dp"
+                          android:paddingStart="12dp"
+                          android:id="@+id/inbox"
+                          tools:targetApi="21"
+                          android:background="?android:attr/selectableItemBackground"
+                          android:layout_height="match_parent">
+                <FrameLayout android:layout_width="wrap_content"
+                              android:gravity="center"
+                              android:layout_height="match_parent">
+                    <ImageView android:layout_width="24dp"
+                               android:layout_height="24dp"
+                               android:background="@drawable/ic_inbox"
+                               android:layout_gravity="center_vertical"
+                        />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:visibility="gone"
+                        android:id="@+id/chat_image"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="-8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_red_svg"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+        <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+                                                      android:id="@+id/swiperefresh"
+                                                      android:layout_height="wrap_content">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/nestedScrollview"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:descendantFocusability="blocksDescendants"
+                          android:orientation="vertical">
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@android:color/white"/>
+                  <FrameLayout android:layout_width="match_parent"
+                              android:paddingTop="8dp"
+                               android:paddingBottom="4dp"
+                               android:visibility="visible"
+                               android:id="@+id/banner_back"
+                               android:background="@color/colorPrimary"
+                              android:layout_height="wrap_content">
+                     <android.support.v4.view.ViewPager
+                                android:id="@+id/viewPager"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                     />
+                     <me.relex.circleindicator.CircleIndicator
+                                android:id="@+id/indicator"
+                                android:layout_width="match_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_gravity="bottom"
+                                android:layout_height="28dp"/>
+                 </FrameLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:paddingStart="12dp"
+                              android:paddingTop="4dp"
+                              android:paddingBottom="4dp"
+                              android:id="@+id/the_three"
+                              android:paddingEnd="12dp"
+                              android:background="@color/colorPrimary"
+                              android:gravity="center_horizontal"
+                              android:orientation="horizontal">
+                    <LinearLayout android:layout_width="0dp"
+                                  android:id="@+id/following_btn"
+                                  android:elevation="2dp"
+                                  tools:targetApi="21"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:layout_margin="8dp"
+                                  android:background="@drawable/home_buttons"
+                                  android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:id="@+id/following_text"
+                            android:textColor="@android:color/white"
+                            android:text="@string/following_button_text"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp"
+                                  android:id="@+id/my_branch_btn"
+                                  android:layout_margin="8dp"
+                                  android:elevation="2dp"
+                                  tools:targetApi="21"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical"
+                                  android:background="@drawable/home_buttons_1"
+                                  android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:id="@+id/my_branch_text"
+                            android:textAllCaps="false"
+                            android:textColor="@color/gray"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:textAllCaps="false"
+                            android:id="@+id/all_posts_btn"
+                            android:layout_margin="8dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:elevation="2dp"
+                            tools:targetApi="21"
+                            android:background="@drawable/home_buttons_1"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:id="@+id/all_post_text"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:textColor="@color/gray"
+                            android:text="@string/button_trending"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center"
+                              android:gravity="center"
+                              android:layout_height="wrap_content">
+                    <ProgressBar android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:visibility="gone"
+                                 android:layout_marginTop="8dp"
+                                 android:id="@+id/progress_bar"
+                                 style="?android:attr/progressBarStyle"
+                    />
+                </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_home_feed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                     />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_post_to_show"
+                    android:visibility="gone"
+                    android:id="@+id/no_posts"
+                />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_internet"
+                    android:visibility="gone"
+                    android:id="@+id/no_internet"
+                />
+                <View android:layout_width="match_parent"
+                      android:layout_height="56dp"
+                      android:background="@android:color/white"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

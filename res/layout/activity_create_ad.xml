@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abhigam.www.foodspot.CreateAdFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:elevation="2dp"
+            tools:targetApi="21"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@android:color/white"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center_horizontal"
+                          android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content"
+                          android:textSize="22sp"
+                          android:text="@string/post_advertise"
+                          android:textColor="@color/black"
+                          android:layout_height="wrap_content"/>
+                <View android:layout_width="0dp"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/nestedScrollview"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="8dp"
+                      android:background="@color/single_default_line"
+                      android:orientation="vertical"
+                      >
+
+        <ImageView android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:textSize="18sp"
+                   android:layout_margin="8dp"
+                  android:id="@+id/add_photo"
+                  android:src="@drawable/ic_add_image"
+                  />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/sells_faster"
+                      android:textSize="12sp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="8dp"
+            android:id="@+id/recycler_choose_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginEnd="8dp"
+                      android:layout_height="wrap_content">
+            <Spinner  android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/category_spinner"
+                      android:spinnerMode="dropdown"
+                      android:layout_marginBottom="16dp"
+                      android:theme="@style/ThemeSpinner"
+                      style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            />
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="4dp"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="16sp"
+                          android:text="@string/title"
+                          android:layout_marginBottom="8dp"
+                          />
+                <EditText android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/title_hint"
+                          android:textSize="20sp"
+                          android:inputType="textNoSuggestions"
+                          android:textColorHint="@color/gray"
+                          android:textCursorDrawable="@drawable/color_cursor"
+                          android:id="@+id/title"
+                          tools:targetApi="21"
+                          android:backgroundTint="@android:color/transparent"
+                          android:paddingBottom="16dp"
+                />
+                <View android:layout_width="match_parent"
+                      android:background="@color/single_default_line"
+                      android:layout_height="1dp"
+                      android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="4dp"
+                          android:textSize="16sp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_marginBottom="8dp"
+                          android:text="@string/description"/>
+                <EditText android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/description_hint"
+                          android:textSize="20sp"
+                          android:inputType="textMultiLine"
+                          android:gravity="top"
+                          tools:targetApi="21"
+                          android:backgroundTint="@android:color/transparent"
+                          android:textColorHint="@color/gray"
+                          android:textCursorDrawable="@drawable/color_cursor"
+                          android:id="@+id/description"
+                          android:paddingBottom="16dp"
+                />
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/single_default_line"
+                      android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="4dp"
+                          android:textSize="16sp"
+                          android:layout_marginBottom="8dp"
+                          android:textColor="@color/colorPrimary"
+                          android:text="@string/expected_price"/>
+                <EditText android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/price"
+                          android:textSize="20sp"
+                          android:inputType="number"
+                          android:maxLength="6"
+                          tools:targetApi="21"
+                          android:backgroundTint="@android:color/transparent"
+                          android:textColorHint="@color/gray"
+                          android:textCursorDrawable="@drawable/color_cursor"
+                          android:id="@+id/expected_price"
+                          android:paddingBottom="16dp"
+                />
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/single_default_line"
+                      android:layout_marginBottom="16dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/charges"
+                      android:layout_marginBottom="16dp"
+                      android:textSize="14sp"
+            />
+                <CheckBox android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/checkbox_terms"
+                          android:layout_marginBottom="8dp"
+                          android:text="@string/terms_and"/>
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/post_ad_button"
+                android:textSize="18sp"
+                android:id="@+id/post_ad_button"
+                android:background="@drawable/edittext"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                app:spinning_bar_width="4dp"
+                android:layout_marginBottom="50dp"
+                app:spinning_bar_color="@color/white"
+                app:spinning_bar_padding="6dp"
+            />
+        </LinearLayout>
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

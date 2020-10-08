@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.abhigam.www.foodspot.Activities">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+        >
+            <LinearLayout
+                android:id="@+id/main_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/my_activity"
+                          android:textSize="22sp"
+                          android:layout_gravity="center_vertical"
+                          android:textColor="@color/black"
+                          />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView android:layout_width="match_parent"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="8dp"
+                          android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:padding="16dp"
+                      android:background="?android:attr/selectableItemBackground"
+                      android:id="@+id/my_notebook"
+                      android:elevation="2dp"
+                      tools:targetApi="21"
+                      android:layout_height="wrap_content">
+            <ImageView android:layout_width="32dp"
+                       android:layout_height="32dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_marginEnd="16dp"
+                       android:src="@drawable/ic_signing"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="15"
+                          android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/my_notebook"
+                      android:textSize="18sp"
+                      android:textColor="@color/black"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="14sp"
+                      android:text="@string/notes_string"/>
+            </LinearLayout>
+            <View android:layout_width="0dp"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+            <ImageView
+                  android:layout_width="24dp"
+                  android:layout_height="24dp"
+                  android:src="@mipmap/ic_right"
+                  android:layout_gravity="center_vertical"
+                  />
+        </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/single_default_line"/>
+                <LinearLayout android:layout_width="match_parent"
+                              android:background="?android:attr/selectableItemBackground"
+                              android:orientation="horizontal"
+                              android:padding="16dp"
+                              android:id="@+id/my_transaction"
+                              android:elevation="2dp"
+                              tools:targetApi="21"
+                              android:layout_height="wrap_content">
+                    <ImageView android:layout_width="32dp"
+                               android:layout_height="32dp"
+                               android:layout_gravity="center_vertical"
+                               android:layout_marginEnd="16dp"
+                               android:src="@drawable/ic_transaction"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="15"
+                                  android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/my_transactions"
+                                  android:textSize="18sp"
+                                  android:textColor="@color/black"/>
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:textSize="14sp"
+                                  android:text="@string/transactions_string"/>
+                    </LinearLayout>
+                    <View android:layout_width="0dp"
+                          android:layout_height="0dp"
+                          android:layout_weight="1"/>
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@mipmap/ic_right"
+                        android:layout_gravity="center_vertical"
+                    />
+                </LinearLayout>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_marginTop="40dp"
+                                android:layout_height="wrap_content">
+                    <ImageView android:layout_width="70dp"
+                               android:id="@+id/billboard"
+                               android:src="@drawable/ic_billboard"
+                               android:layout_centerInParent="true"
+                               android:layout_height="70dp"/>
+                    <ImageView android:layout_width="50dp"
+                               android:id="@+id/auto_mobile"
+                               android:layout_marginStart="16dp"
+                               android:layout_marginBottom="-12dp"
+                               android:src="@drawable/ic_auto_mobile"
+                               android:layout_above="@id/view"
+                               android:layout_height="50dp"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:id="@+id/view"
+                      android:layout_below="@id/billboard"
+                      android:background="@color/single_default_line"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

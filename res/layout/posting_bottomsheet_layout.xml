@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+              android:id="@+id/bottom_sheet"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:targetApi="21"
+              android:elevation="4dp"
+              android:background="@android:color/white"
+              android:gravity="center_horizontal"
+              app:behavior_hideable="false"
+              app:behavior_peekHeight="50dp"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:id="@+id/post_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_signing"
+        />
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="15"
+                      android:layout_gravity="center_vertical"
+                      android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/post_information"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="@string/post_info"/>
+        </LinearLayout>
+        <View android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:src="@mipmap/ic_right"
+                   android:tint="@color/gray"
+                   android:layout_gravity="center_vertical"
+                  />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/transfer_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_transaction"
+        />
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="15"
+                      android:layout_gravity="center_vertical"
+                      android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/pay_or_transfer"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="12sp"
+                android:text="@string/send_receive_coins"/>
+        </LinearLayout>
+        <View android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <ImageView android:layout_width="24dp"
+                   android:layout_height="24dp"
+                   android:src="@mipmap/ic_right"
+                   android:tint="@color/gray"
+                   android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="60dp"
+          />
+</LinearLayout>

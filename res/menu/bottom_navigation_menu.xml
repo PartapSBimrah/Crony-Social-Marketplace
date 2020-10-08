@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_icon"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_post"
+        android:enabled="true"
+        android:title="Post"
+        android:icon="@drawable/ic_send_blue"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_notify"
+        android:enabled="true"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_user"
+        android:enabled="true"
+        android:icon="@drawable/ic_user"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>

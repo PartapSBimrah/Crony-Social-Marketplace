@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_height="56dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            tools:targetApi="21"
+        >
+            <TextView
+                android:id="@+id/main_toolbar_title"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+                                                  android:id="@+id/swiperefresh"
+                                                  android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone"
+                     android:layout_marginTop="10dp"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/progress_bar"
+                     style="?android:attr/progressBarStyle"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_followers"
+            android:visibility="gone"
+            android:id="@+id/no_followers"
+        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/no_internet"
+            android:visibility="gone"
+            android:id="@+id/no_internet"
+        />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_for_suggested_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

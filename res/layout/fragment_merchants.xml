@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:hint="@string/search_merchants"
+              android:padding="16dp"
+              android:drawableStart="@drawable/ic_search"
+              android:drawablePadding="8dp"
+              android:inputType="textNoSuggestions"
+              android:textSize="18sp"
+              app:backgroundTint="@color/gray"
+              android:id="@+id/search_merchants"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="8dp"
+          android:background="@color/single_default_line"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_marginStart="16dp"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="22dp"
+                   android:layout_height="22dp"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginEnd="8dp"
+                   android:tint="@color/colorPrimary"
+                   android:src="@drawable/ic_trending"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="18sp"
+              android:layout_gravity="center_vertical"
+              android:text="Trending"
+              android:textColor="@color/colorPrimary"
+              android:id="@+id/mer_name"/>
+        <View android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:padding="8dp"
+                      android:id="@+id/map"
+                      android:layout_height="wrap_content">
+        <ImageView android:layout_width="32dp"
+                   android:layout_height="32dp"
+                   android:layout_marginEnd="8dp"
+                   android:tint="@color/my_advertise"
+                   android:src="@drawable/ic_directions"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_merchants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+</LinearLayout>

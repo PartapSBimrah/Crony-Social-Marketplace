@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.abhigam.www.foodspot.FirstScreen">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginEnd="24dp"
+                  android:layout_marginStart="24dp"
+                  android:orientation="vertical">
+        <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/get_started"
+                  android:textColor="@color/white"
+                  android:textSize="28sp"
+                  android:layout_marginStart="4dp"
+                  android:layout_marginBottom="12dp"
+                  android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/transparent_white"
+            android:id="@+id/enroll_layout"
+        >
+        <android.support.v7.widget.AppCompatEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/hint_enroll"
+                  android:layout_marginTop="12dp"
+                  android:layout_marginBottom="2dp"
+                  android:textSize="24sp"
+                  android:maxLength="12"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:textColor="@color/white"
+                  android:inputType="textNoSuggestions"
+                  android:textCursorDrawable="@drawable/color_cursor_1"
+                  android:backgroundTint="@color/white"
+                  android:id="@+id/enroll"
+        />
+        </android.support.design.widget.TextInputLayout>
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_alignTop="@id/enroll_layout"
+            android:layout_alignBottom="@id/enroll_layout"
+            android:layout_alignEnd="@id/enroll_layout"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/enroll_ex"
+                  android:layout_marginStart="4dp"
+                  android:textColor="@color/white"
+                  android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/transparent_white"
+            android:id="@+id/mobile_layout"
+        >
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mobile"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textCursorDrawable="@drawable/color_cursor_1"
+            android:backgroundTint="@color/white"
+            android:id="@+id/mobile"
+        />
+        </android.support.design.widget.TextInputLayout>
+            <ProgressBar
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/progress_mobile"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_alignTop="@id/mobile_layout"
+                android:layout_alignBottom="@id/mobile_layout"
+                android:layout_alignEnd="@id/mobile_layout"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="24dp"
+                  android:text="@string/otp_info"
+                  android:layout_marginStart="4dp"
+                  android:textColor="@color/white"
+                  android:textSize="14sp"/>
+
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_login"
+            android:text="@string/sign_up"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="6dp"/>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/white"
+                  android:textSize="14sp"
+                  android:layout_marginStart="4dp"
+                  android:text="@string/login_info"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="horizontal"
+                          android:id="@+id/login"
+                          android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/white"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginBottom="16dp"
+                      android:layout_marginEnd="16dp"
+                      android:layout_marginStart="4dp"
+                      android:textSize="20sp"
+                      android:text="@string/login"
+                      android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

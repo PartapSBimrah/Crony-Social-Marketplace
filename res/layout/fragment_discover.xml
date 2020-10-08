@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_top"
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        tools:targetApi="21"
+        android:background="@color/colorPrimary"
+    >
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="20sp"
+                      android:text="@string/gwalior"
+                      android:id="@+id/app_name"
+                      android:layout_marginStart="-16dp"
+                      android:layout_gravity="center_vertical"
+                      android:textColor="@android:color/white"
+                      android:textStyle="bold"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/nestedScrollview"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+    >
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginTop="16dp"
+                      android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:textColor="@color/black"
+                  android:text="Restaurants"
+                  android:textSize="16sp"
+                  android:layout_marginStart="12dp"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+        />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Cafes"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/cafes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Hotels"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/hotels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Mandirs"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/monuments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Hospitals"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Stores"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/groceries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textStyle="bold"
+                      android:textColor="@color/black"
+                      android:text="Parks"
+                      android:textSize="16sp"
+                      android:layout_marginStart="12dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/parks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+            />
+            <View android:layout_width="match_parent"
+                  android:layout_height="56dp"
+                  android:background="@android:color/white"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

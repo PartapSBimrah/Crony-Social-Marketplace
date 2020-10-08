@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <com.abhigam.www.foodspot.CircularNetworkImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:id="@+id/circular_small_profile"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_marginEnd="8dp"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="8dp"
+                          android:layout_marginBottom="2dp"
+                          android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/fullname"
+                          android:textColor="@color/black"
+                          android:textSize="12sp"
+                          android:textStyle="bold"
+                />
+                <ImageView android:layout_width="16dp"
+                           android:layout_height="16dp"
+                           android:src="@drawable/ic_verified"
+                           android:id="@+id/ic_verified"
+                           android:visibility="gone"
+                           android:layout_marginStart="4dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginEnd="4dp"
+                />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/time_ago"
+                          android:textColor="@color/gray"
+                          android:textSize="12sp"
+                />
+                <View android:layout_width="0dp"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"/>
+                <ImageView android:layout_width="20dp"
+                           android:src="@drawable/ic_more_vert"
+                           android:tint="@color/gray"
+                           android:id="@+id/popup_comment"
+                           android:layout_marginEnd="8dp"
+                           android:layout_height="20dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/review"
+                      android:autoLink="web"
+                      android:layout_marginEnd="8dp"
+                      android:textIsSelectable="true"
+                      android:textColor="@color/black"
+                      android:textSize="14sp"
+                      android:maxLines="15"
+                      android:layout_marginBottom="8dp"
+                      />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/read_more"
+                      android:layout_marginEnd="8dp"
+                      android:layout_marginBottom="12dp"
+                      android:textSize="14sp"
+                      android:id="@+id/read_more"
+                      android:visibility="gone"
+                      android:textColor="@color/my_notebook"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_marginBottom="8dp"
+                          android:layout_height="wrap_content">
+                <ImageView android:layout_width="20dp"
+                           android:src="@drawable/ic_thumbs_up"
+                           android:tint="@color/gray"
+                           android:id="@+id/like_comment"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginEnd="6dp"
+                           android:layout_height="20dp"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/number_likes"
+                          android:layout_marginEnd="16dp"
+                          android:layout_gravity="center_vertical"
+                          android:textSize="12sp"/>
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_reply"
+                           android:tint="@color/gray"
+                           android:id="@+id/reply"
+                           android:layout_gravity="center_vertical"
+                           android:layout_marginEnd="4dp"
+                           />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/number_replies"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginEnd="16dp"
+                          android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/single_default_line"
+    />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="8dp"
+                      android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:layout_height="35dp"
+                android:id="@+id/notify_image"/>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_gravity="center_vertical"
+                          android:paddingStart="8dp"
+                          android:paddingEnd="8dp"
+                          android:id="@+id/notification"
+                          android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content"
+                          android:id="@+id/notify_text"
+                          android:textSize="13sp"
+                          android:maxLines="3"
+                          android:ellipsize="end"
+                          android:textColor="@color/black"
+                          android:layout_height="wrap_content"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:id="@+id/time_ago"
+                          android:layout_marginTop="2dp"
+                          android:textSize="12sp"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:id="@+id/accept_cancel"
+                  android:layout_height="wrap_content">
+        <View android:layout_width="0dp"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginEnd="24dp"
+                      android:layout_height="wrap_content">
+    <ImageView android:layout_width="32dp"
+               android:layout_height="32dp"
+               android:layout_gravity="center_vertical"
+               android:layout_marginEnd="8dp"
+               android:id="@+id/accept_request"
+               android:src="@drawable/ic_check"
+               tools:targetApi="21"
+               android:background="?android:attr/selectableItemBackgroundBorderless"
+               android:tint="@color/green_offer"
+    />
+    <View android:layout_width="1dp"
+          android:layout_height="32dp"
+          android:layout_marginTop="2dp"
+          android:layout_marginBottom="2dp"
+          android:background="@color/gray"/>
+    <ImageView android:layout_width="32dp"
+               android:layout_height="32dp"
+               android:layout_marginStart="8dp"
+               android:layout_gravity="center_vertical"
+               tools:targetApi="21"
+               android:id="@+id/cancel_request"
+               android:background="?android:attr/selectableItemBackgroundBorderless"
+               android:tint="@android:color/holo_red_light"
+               android:src="@drawable/ic_cancel"
+    />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginTop="4dp"
+          android:background="@color/single_default_line"
+          />
+</LinearLayout>

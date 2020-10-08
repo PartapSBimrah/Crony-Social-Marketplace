@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.abhigam.www.foodspot.TransactionDone">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                   >
+        <LinearLayout android:layout_width="match_parent"
+                      android:gravity="center"
+                      android:layout_marginTop="16dp"
+                      android:layout_marginBottom="16dp"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="28sp"
+                      android:textColor="@android:color/black"
+                      android:layout_gravity="center_horizontal"
+                      android:gravity="center"
+                      android:layout_marginBottom="16dp"
+                      android:text="@string/transaction_successful"/>
+        </LinearLayout>
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/ic_trans_don"
+                   android:layout_gravity="center_horizontal"
+        />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/info_transaction"
+              android:textSize="18sp"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center"
+              android:lineSpacingExtra="6dp"
+              android:layout_marginStart="16dp"
+              android:layout_marginEnd="16dp"
+              android:textColor="@android:color/black"
+              android:layout_marginTop="24dp"
+              android:layout_marginBottom="16dp"
+             />
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="56dp"
+                      android:elevation="4dp"
+                      tools:targetApi="21"
+                      android:layout_margin="16dp"
+                      android:id="@+id/done"
+                      android:background="@drawable/edittext"
+                      android:gravity="center"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20sp"
+                      android:textColor="@android:color/white"
+                      android:text="@string/done"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

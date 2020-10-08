@@ -1,0 +1,489 @@
+<resources>
+    <string name="app_name">Crony</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_username">Username or Email</string>
+    <string name="register">REGISTER</string>
+    <string name="loginwith">Login with</string>
+    <string name="already_login">Already have an account?
+        <b>Log in.</b>
+    </string>
+    <string name="register_now">NEXT</string>
+    <string name="hint_fullname_register">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="log_in_with_facebook">
+        <b>Log in with Facebook</b>
+    </string>
+    <string name="create_username">
+        <b>CREATE USERNAME</b>
+    </string>
+    <string name="create_username_button">NEXT</string>
+    <string name="profile_browse">CHOOSE</string>
+    <string name="profile_upload">UPLOAD</string>
+    <string name="profile_pic">Upload Profile Pic</string>
+    <string name="skip_profile">SKIP</string>
+    <string name="error_connection">Unable to connect</string>
+    <string name="text_home">Home</string>
+    <string name="text_search">Search</string>
+    <string name="text_heart">Bliss</string>
+    <string name="text_person">Me</string>
+    <string name="place_name">Place Name</string>
+    <string name="place_address">Place Address</string>
+    <string name="attribution">Attribution</string>
+    <string name="search_restaurant">Search In Restaurant</string>
+    <string name="about">About</string>
+    <string name="wanna_try">I wanna try this !</string>
+    <string name="mini_review">Add a mini review...</string>
+    <string name="reviews">Reviews</string>
+    <string name="menu">Menu</string>
+    <string name="watch_video">Watch Video</string>
+    <string name="search_by_tags">Search by tags</string>
+    <string name="search_by_places">Search by places</string>
+    <string name="top_items_nearby">Top tags nearby</string>
+    <string name="top_places_nearby">Top places nearby</string>
+
+    <string name="get_place_text">Get Place</string>
+    <string name="all_items">All Items</string>
+
+    <string name="one">1 km</string>
+    <string name="five">5 km</string>
+    <string name="two_five">25 km</string>
+    <string name="one_zero_zero">100 km</string>
+    <string name="global">Global</string>
+    <string name="email_hint">
+        <font size="17">Email or Blisspot Username</font>
+    </string>
+    <string name="love">Made with love in India</string>
+    <string name="gps_message_22">Allow <b>Blisspot</b> to access this device\'s location?
+    </string>
+
+    <string name="empty_tag">Can\'t search empty tag</string>
+    <string name="people_who_liked">People who liked this</string>
+    <string name="suggested_people">Suggested People</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_suggestions">Sorry, no suggestions for you !</string>
+    <string name="about_profile">Who Am I ?</string>
+    <string name="read_more">Read more</string>
+    <string name="following_number">Following</string>
+    <string name="foodspot_timeline">Blisspot timeline</string>
+    <string name="no_posts_from_followers">Oops ! There are no posts from people you follow.
+    </string>
+    <string name="no_following">You are not following anyone.</string>
+    <string name="no_followers">You have no followers.</string>
+
+    <string name="followers_number">Followers</string>
+    <string name="todo_list">To-do List</string>
+
+    <string name="change_photo">Change Pic</string>
+    <string name="username">Username</string>
+    <string name="username_taken">Username already taken</string>
+    <string name="email_taken">Email already taken</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="log_out">Log Out</string>
+    <string name="todo">To-do</string>
+    <string name="added">Added</string>
+    <string name="no_todo">No To-do items saved.</string>
+    <string name="delete">Remove</string>
+    <string name="notifications">Notifications</string>
+    <string name="todo_notify">To-do Notifications</string>
+    <string name="info">Info</string>
+    <string name="bliss">Bliss</string>
+    <string name="address">Address</string>
+    <string name="timings">Timings</string>
+    <string name="from_owner">From the Owner</string>
+    <string name="no_notifications">You have no notifications.</string>
+    <string name="discover">Discover</string>
+    <string name="activity">Activity</string>
+    <string name="nothing_here">No posts here.</string>
+    <string name="book_table">BOOK A TABLE</string>
+    <string name="add">+ ADD</string>
+    <string name="add_another">+ ADD ANOTHER</string>
+    <string name="plate">Plate</string>
+    <string name="tables">Tables</string>
+    <string name="no_orders">You have no orders in your plate.</string>
+    <string name="Rs">\u20B9</string>
+    <string name="ins_special">Special Instructions/Comments</string>
+    <string name="ins_special_eg">E.g. I\'d like a table near window.</string>
+    <string name="table_for">Table for? E.g. 2</string>
+    <string name="book_table_small">Book a Table</string>
+    <string name="book_table_ins">By tapping \"BOOK\", your table will be reserved in</string>
+    <string name="eg_time">At Time(E.g. 11:00 AM)</string>
+    <string name="book">BOOK</string>
+    <string name="status">Status:</string>
+    <string name="gwalior">Gwalior</string>
+
+
+    <string name="get_started">Get started</string>
+    <string name="hint_enroll">Enrollment No.</string>
+    <string name="hint_mobile">Mobile No.</string>
+    <string name="otp_info">We will send an OTP to verify your mobile number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_info">Already have an account ?</string>
+    <string name="login">Login.</string>
+    <string name="password_hint">
+        <font size="17">Password</font>
+    </string>
+    <string name="log_in">Log In</string>
+    <string name="login_hint">Enrollment No.</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="enter_verification">ENTER VERIFICATION CODE</string>
+    <string name="enter_6_digit_code">Enter the 6-digit code we sent to</string>
+    <string name="request_new_one">Request a new one.</string>
+    <string name="next">NEXT</string>
+    <string name="enroll_ex">Eg. 0901CS151001</string>
+    <string name="year_of_adm">Year of Admission(Eg. 2018)</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="select_branch">Select your Branch</string>
+    <string name="profile">Profile</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="edit">Edit</string>
+    <string name="notes">Notes</string>
+    <string name="resume">Resume</string>
+    <string name="resume_string">Build and download free resume with guidelines</string>
+    <string name="my_posts">My posts</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="changes_saved">Changes saved successfully</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enrollment">Enrollment No.</string>
+    <string name="email">Email</string>
+    <string name="profile_changed">Profile picture updated successfully</string>
+    <string name="rights">© 2018 Crony Inc.</string>
+    <string name="following_button_text">Following</string>
+    <string name="follow_button_text">Follow</string>
+    <string name="search_username">Search by Name, Branch or Year</string>
+    <string name="create_post">Create Post</string>
+    <string name="create_ad">Sell an item</string>
+    <string name="post">Post</string>
+    <string name="post_information">Create Post</string>
+    <string name="post_info">Share status or information.</string>
+    <string name="submit">Submit</string>
+    <string name="type_here">Type here&#8230;</string>
+    <string name="now">Now</string>
+    <string name="post_advertise">Create your Ad</string>
+    <string name="post_ad">Sell your product in Crony Market.</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="post_ad_permission">Without allowing permission to access photos, you won\'t be
+        able to use this feature.
+        You can change it anytime from \"Settings\" in your phone.
+    </string>
+    <string name="sells_faster">*Ads with 2 or more picture sells faster</string>
+    <string-array name="category">
+        <item>Category</item>
+        <item>Book</item>
+        <item>Study Material</item>
+        <item>Stationary</item>
+        <item>Furniture</item>
+        <item>Electronics</item>
+        <item>Miscellaneous</item>
+    </string-array>
+    <string name="title">Title</string>
+    <string name="title_hint">keep it short and simple</string>
+    <string name="description">Description</string>
+    <string name="description_hint">keep it specific and to the point</string>
+    <string name="expected_price">Expected Price</string>
+    <string name="price">price</string>
+    <string name="charges">All the advertisements are free of cost.\nWe charge 10% of the price or
+        ₹150,\nwhichever is less. Only when your item is sold.
+    </string>
+    <string name="terms_and">I agree to Terms and Conditions</string>
+    <string name="post_ad_button">Post Ad</string>
+    <string name="FCM_PREF">com.abhigam.www.foodspot.fcm_pref</string>
+    <string name="FCM_TOKEN">com.abhigam.www.foodspot.fcm_token</string>
+    <string name="load_more">Load More</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="save">SAVE</string>
+    <string name="small_save">Save</string>
+    <string name="taxes_product_price">This price is inclusive of all taxes</string>
+    <string name="product_details">PRODUCT DETAILS</string>
+    <string name="similar_products">SIMILAR PRODUCTS</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="private_collection">Private Collection</string>
+    <string name="no_items_wishlist">No items</string>
+    <string name="notebook">Notebook</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="likes">Likes</string>
+    <string name="no_likes">No likes</string>
+    <string name="add_comment">Add a public comment&#8230;</string>
+    <string name="hint_comment">Add a public comment&#8230;</string>
+    <string name="comment_added">Comment Added</string>
+    <string name="comment_deleted">Comment Deleted</string>
+    <string name="just_now">Just now</string>
+    <string name="button_all">All posts</string>
+    <string name="button_following">Following</string>
+    <string name="comment_edited">Comment Edited</string>
+    <string name="category">Category</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort by</string>
+    <string-array name="category_market">
+        <item>Book</item>
+        <item>Study Material</item>
+        <item>Crony Merchant</item>
+        <item>Stationary</item>
+        <item>Furniture</item>
+        <item>Electronics</item>
+        <item>Miscellaneous</item>
+    </string-array>
+    <string-array name="sort_market">
+        <item>₹ Min to Max</item>
+        <item>₹ Max to Min</item>
+        <item>Latest</item>
+    </string-array>
+    <string name="image_saved">Image saved</string>
+    <string name="image_not_loaded">Image not loaded</string>
+    <string name="switch_private">Private account</string>
+    <string name="request">Requested</string>
+    <string name="ok">OK</string>
+    <string name="request_cancelled">Request cancelled</string>
+    <string name="follow_to_see">Follow user to see posts</string>
+    <string name="my_activity">My Activities</string>
+    <string name="my_act_info">Transactions, Saved posts, Orders, Ads and other details</string>
+    <string name="view_reply">VIEW REPLIES</string>
+    <string name="transfer_coins">Transfer Money</string>
+    <string name="send_receive_coins">Pay, transfer or add money within seconds.
+    </string>
+    <string name="search_receiver">Search receiver</string>
+    <string name="add_amount">Enter Amount</string>
+    <string name="your_balance">Your balance :</string>
+    <string name="done">GREAT</string>
+    <string name="my_orders">My Orders</string>
+    <string name="orders_string">All orders details</string>
+    <string name="my_transactions">Wallet</string>
+    <string name="transactions_string">All transactions details</string>
+    <string name="my_notebook">Notebook</string>
+    <string name="notes_string">All saved posts</string>
+    <string name="my_advertisement">My Advertisements</string>
+    <string name="advertisement_string">All details of posted advertisements</string>
+    <string name="my_wishlist">Wishlist</string>
+    <string name="wishlist_string">Wishlist of Crony market</string>
+    <string name="no_transaction">No transactions</string>
+    <string name="no_advertisement">No advertisement</string>
+    <string name="pay_or_transfer">Pay or Transfer Money</string>
+    <string name="button_trending">Trending</string>
+    <string name="transfer">Transfer</string>
+    <string name="terms_sign_up">By tapping \"Sign Up\" you agree to Crony\'s
+        <u>
+            <b>Terms</b>
+        </u>
+        and
+        <u>
+            <b>
+                Privacy policy
+            </b>
+        </u>
+        .
+    </string>
+    <string name="terms_login">By tapping \"LOG IN\" you agree to Crony\'s
+        <u>
+            <b>Terms</b>
+        </u>
+        and
+        <u>
+            <b>
+                Privacy policy
+            </b>
+        </u>
+        .
+    </string>
+    <string name="add_reply">Type reply here&#8230;</string>
+    <string name="reply_deleted">Reply deleted</string>
+    <string name="bio">Bio</string>
+    <string name="forgot_password">Forgot your password\?</string>
+    <string name="my_bio">Type bio here&#8230;</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="continue_forgot">CONTINUE</string>
+    <string name="enter_mobile_no">Enter associated account mobile no.</string>
+    <string name="upload_id_card">Upload ID card</string>
+    <string name="change_password">Change Password</string>
+    <string name="edit_hint_password">Password should contain atleast 1 digit, 1 special character,
+        1 small and 1 capital alphabet and no spaces.
+    </string>
+    <string name="id_upload_hint">(Verify your account by uploading College ID card image, your
+        info will automatically be updated after verification)
+    </string>
+    <string name="changes_reflect">Changes will reflect within 24 hours</string>
+    <string name="branch">Branch</string>
+    <string name="pay_money">Pay</string>
+    <string name="pay_money_hint">Pay money at stores partnered with Crony</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="transfer_money_hint">Transfer money to your friends or\nany other Crony user
+    </string>
+    <string name="add_money">Add to wallet</string>
+    <string name="add_money_hint">Add money to Crony wallet and go cashless</string>
+    <string name="store_id_no">Store ID</string>
+    <string name="or_string">OR</string>
+    <string name="proceed">PROCEED</string>
+    <string name="seller">Seller</string>
+    <string name="total_string">Total:</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="token">Token:</string>
+    <string name="transition_post">transition_market</string>
+    <string name="transition_post_1">transition_post_similar_products</string>
+    <string name="comments">Comments</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="wallet_instruction">All your transactions\nare shown here</string>
+    <string name="orders">Orders</string>
+    <string name="use_token">Show the \"Token\"\nat our Warehouse while\npicking up your orders
+    </string>
+    <string name="saved_posts">Saved Posts</string>
+    <string name="s_p_instruction">All your saved\nposts are shown here</string>
+    <string name="saved_products">Favorite Products</string>
+    <string name="f_p_instruction">All your favorite\nproducts are shown here</string>
+    <string name="advertisements">Advertisements</string>
+    <string name="a_instruction">Show the \"Token\"\nat our Warehouse while\ndropping your items
+    </string>
+    <string name="remove">Remove</string>
+    <string name="l_warehouse">Locate Warehouse</string>
+    <string name="nearest_w">Nearest Warehouse</string>
+    <string name="warehouse_name">Om Stationary Shop</string>
+    <string name="w_address">(near Shital Cafe, Gole ka Mandir)</string>
+    <string name="instruction_at_warehouse">You have to Pick and Drop items at this shop to make
+        your
+        orders and advertisements successful
+    </string>
+    <string name="contact_details">Contact Us</string>
+    <string name="help_heading">Having trouble?\nor\nSuggestion for us</string>
+    <string name="help_small">Feel free to contact</string>
+    <string name="other_options">OTHER OPTIONS</string>
+    <string name="frequent_stores">Frequent Stores</string>
+    <string name="transaction_successful">Transaction Successful</string>
+    <string name="ad_before_send">Once posted you won\'t be able to edit the Advertisement</string>
+    <string name="ad_submitted">Advertisement Submitted</string>
+    <string name="ad_sent">To get your Advertisement live in Crony Market, Drop your item at Nearest
+        Warehouse and for
+        more details go to
+        <b>My Advertisements</b>
+    </string>
+    <string name="add_image">Add Image</string>
+
+    <string name="items">Items</string>
+    <string name="merchants">Shops</string>
+    <string name="cafes">Cafes</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="street">Street food</string>
+    <string name="places">Places</string>
+    <string name="search_merchants">by Name, Location and Type</string>
+    <string name="trending">Trending</string>
+    <string name="map">Find merchants on map</string>
+    <string name="chatroom">Chatroom</string>
+    <string name="active">Connections</string>
+    <string name="suggested">Suggested</string>
+
+    <string-array name="quotes">
+        <item>\"An obstacle is often a stepping stone.\"\n-Prescott</item>
+        <item>\"It\'s hard to beat a person who never gives up.\"\n-Babe Ruth</item>
+        <item>\"The future starts today, not tomorrow.\"\n-Pope John Paul II</item>
+        <item>\"Name the greatest of all inventors. Accident.\"\n-Mark Twan</item>
+        <item>\"Believe you can and you\'re half way there."\n-T. Roosevelt</item>
+        <item>\"If you can dream it, you can do it.\"\n-Walt Disney</item>
+        <item>\"Never give up on your dreams.\"\n-Anonymous</item>
+        <item>\"It\'s not the money, I\'m after it\'s freedom.\"\n-Anonymous</item>
+        <item>\"Look in the mirror. That\'s your competition.\"\n-Anonymous</item>
+        <item>\"An eye for eye only ends up making the whole world blind.\"\n-M.K. Gandhi</item>
+        <item>\"Be the change you wan\'t to see in the world.\"\n-Gandhiji</item>
+        <item>\"If you wan\'t to shine like a sun. First burn like a sun.\"\n-A.P.J Abdul Kalam
+        </item>
+        <item>\"The key to CHANGE&#8230;is to let go of FEAR.\"\n-Rosanne Cash</item>
+        <item>\"Nothing is to be feared, it is only to be understood.\"\n-Marie Curie</item>
+        <item>\"Week people revenge. Strong people forgive. Intelligent people ignore.\"\n-Albert
+            Einstein
+        </item>
+        <item>\"Intelligence is the ability to adapt the change.\"\n-Stephen Hawking</item>
+        <item>\"Imagination is more important than knowledge.\"\n-Albert Einstein</item>
+        <item>\"Once you stopped learning, you start dying.\"\n-Albert Einstein</item>
+        <item>\"We realise the importance of our voices only when we are silenced.\"\n-Malala
+            Yousafzai
+        </item>
+        <item>\"Life is what happens when you\'re busy making other plans.\"\n-John Lennon</item>
+        <item>\"Have no fear of perfection, you will never reach it.\"\n-Salvador Dali</item>
+        <item>\"The best way to predict the future is to create it.\"\n-Abraham Lincoln</item>
+        <item>\"I walk slowly, but I never walk backward.\"\n-Abraham Lincoln</item>
+        <item>\"You need to know what to do when the sun is not shining.\"\n-Robert Downey Jr.
+        </item>
+        <item>\"You are the creator of your own destiny.\"\n-Anonymous</item>
+        <item>\"You\'re amazing REMEMBER THAT.\"\n-Anonymous</item>
+        <item>\"Creativity is contagious, pass it on.\"\n-Albert Einstein</item>
+        <item>\"We build too many walls and not enough bridges.\"\n-Issac Newton</item>
+        <item>\"One good thing about music, when it hits you, you feel no pain.\"\n-Bob Marley
+        </item>
+        <item>\"You can do anything if you\'ve enthusiasm.\"\n-Henry Ford</item>
+        <item>\"To improve is to change: to be perfect is to change often.\"\n-Winston Churchill
+        </item>
+        <item>\"I am a big believer that technology shapes mankind.\"\n-Mukesh Ambani</item>
+        <item>\"You can\'t get into business for the fashion of it.\"\n-Azim Premji</item>
+        <item>\"Their is only one religion in the world i.e. Hardwork.\"\n-Shahrukh Khan</item>
+        <item>\"Don\'t become a philosopher before you become rich.\"\n-Shahrukh Khan</item>
+        <item>\"I\'ve not failed, I\'ve just found 10 thousand ways that won\'t work.\"\n-T.A.
+            Edison
+        </item>
+        <item>\"Great companies are built on great products.\"\n-Elon Musk</item>
+        <item>\"Only Engineers and Architects can see hidden lines and missing
+            curves.\"\n-Anonymous
+        </item>
+        <item>\"If your dreams don\'t scare you, they aren\'t big enough.\"\n-Muhammad Ali</item>
+        <item>\"Float like a butterfly, Sting like a bee.\"\n-Muhammad Ali</item>
+        <item>\"Don\'t count the days, make the days count.\"\n-Muhammad Ali</item>
+        <item>\"The power to question is the basis of all human progress.\"\n-Indira Gandhi</item>
+        <item>\"Arise! Awake! and stop not until the goal is reached.\"\n-Swami Vivekananda</item>
+        <item>\"Everything is easy when you\'re busy, Nothing is easy when you\'re lazy.\"\n-Swami
+            Vivekananda
+        </item>
+        <item>\"Kuch aisa likhen jo padne layak ho or kuch aisa karen jo likhne layak ho.
+            \"\n-Anonymous
+        </item>
+        <item>\"Insaan Mann se viklang hota hai shareer se nhi.\"\n-Anonymous</item>
+        <item>\"Har ek din wo cheej karo jo aapko daraati hai.\"\n-Anonymous</item>
+        <item>\"Murkh doosro par haste hain, buddhimaan khud par.\"\n-Anonymous</item>
+        <item>\"The best way out is always through.\"\n-Robert Frost</item>
+        <item>\"Experience is what you get when you don\'t get what you want.\"\n-Dan Standford
+        </item>
+        <item>\"Fall seven time, get up eight.\"\n-Japanese proverb</item>
+        <item>\"Difference between ordinary and extraordinary is that little EXTRA.\"\n-Anonymous
+        </item>
+        <item>\"Life is trying things to see if they work.\"\n-Ray Bradbury</item>
+        <item>\"If you\'re going through hell, keep going.\"\n-Winston Churchill</item>
+        <item>\"Life is a journey, not a race. Walk through it.\"\n-Anonymous</item>
+        <item>\"Push yourself because, no-one else is going to do it for you.\"\n-Anonymous</item>
+        <item>\"The body achieves what the mind believes.\"\n-Anonymous</item>
+        <item>\"People will laugh at your dreams, then hate you when you make them come
+            true.\"\n-Anonymous
+        </item>
+        <item>\"97% of the people who quit too soon are employed by 3% who never give
+            up.\"\n-Anonymous
+        </item>
+        <item>\"When you have a million dollar vision who surround yourself with 1cent
+            minds.\"\n-Anonymous
+        </item>
+        <item>\"The problem is not the problem. The problem is your attitude about the
+            problem.\"\n-Johnny Depp
+        </item>
+        <item>\"Don\'t call it a dream call it a plan.\"\n-Anonymous</item>
+        <item>\"Never accept anything less than you deserve. Remember, you teach people how to treat
+            you.\"\n-Anonymous
+        </item>
+        <item>\"The only limits in the life are the ones you create.\"\n-Anonymous</item>
+        <item>\"Falling down is an accident. Staying down is a choice.\"\n-Anonymous</item>
+        <item>\"The happiest people in the life are the givers, not the getters.\"\n-Anonymous
+        </item>
+        <item>\"To live a creative life, we must loose our fear of being wrong.\"\n-J.C. Pearce
+        </item>
+        <item>\"It does not matter how slowly you go, as long as you do not stop.\"\n-Confucius
+        </item>
+        <item>\"Choose a job you love, and you\'ll never have to work in your life.\"\n-Confucius
+        </item>
+        <item>\"Life doesn\'t get easier you just get stronger.\"\n-Anonymous</item>
+        <item>\"Your worst battle is between what you know and what you feel.\"\n-Anonymous</item>
+        <item>\"Be their for others, but never leave yourself behind.\"\n-Dodinsky</item>
+        <item>\"Integrity is choosing your thoughts and actions based on values rather than personal
+            gain.\"\n-Anonymous
+        </item>
+        <item>\"Their is a voice that doesn\'t use words. Listen.\"\n-Anonymous</item>
+        <item>\"There are 360 degrees, so why stick to one?\"\n-Zaha Hadid</item>
+        <item>\"I really believe in the idea of the future.\"\n-Zaha Hadid</item>
+    </string-array>
+</resources>
